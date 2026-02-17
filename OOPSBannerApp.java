@@ -2,7 +2,7 @@ public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        String banner = String.join("\n",
+        String[] bannerLines = {
             "   ***        ***      ******        ***** ",
             " **   **    **   **    **    **     **     ",
             "**     **  **     **   **     **   **     ",
@@ -12,8 +12,10 @@ public class OOPSBannerApp {
             "**     **  **     **   **               **     ",
             " **   **    **    **   **              **       ",
             "   ***        ***      **         *****    "
-        );
+        };
 
-        System.out.println(banner);
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
     }
 }
